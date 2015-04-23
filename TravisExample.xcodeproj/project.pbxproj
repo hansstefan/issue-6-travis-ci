@@ -301,7 +301,7 @@
 				HOCKEY_APP_ID = "";
 				INFOPLIST_FILE = "TravisExample/TravisExample-Info.plist";
 				PRODUCT_NAME = Travis;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = 123;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = 123;
 				TESTFLIGHT_APP_TOKEN = "";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
