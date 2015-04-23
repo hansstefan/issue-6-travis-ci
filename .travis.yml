@@ -8,13 +8,8 @@ before_install:
   - gem install sigh
 
 before_script:
-  - security create-keychain -p travis $KEYCHAIN_NAME.keychain
-  - security import ./Scripts/certs/distEnterprise.p12 -k ~/Library/Keychains/$KEYCHAIN_NAME.keychain -P $P12_PASSWORD -T /usr/bin/codesign
-  - security import ./Scripts/certs/apple.cer -k ~/Library/Keychains/$KEYCHAIN_NAME.keychain -T /usr/bin/codesign
+  - ./Scripts/add-key.sh
   
-  - mkdir -p "$XC_PROFILE_PATH"
-  - DELIVER_PASSWORD="$APPLE_PASSWORD" sigh --skip_install -a 'com.example.Travis' -u $USER_ID -t $TEAM_ID -n "TRAVIS-$PROFILE_NAME" -o "$XC_PROFILE_PATH" -f $PROFILE_NAME.mobileprovision
-
   - PROFILE_UDID=$(./Scripts/profileAnalyzer.rb "$XC_PROFILE_PATH/$PROFILE_NAME.mobileprovision")
   - echo $PROFILE_UDID
   - ls "$XC_PROFILE_PATH"
