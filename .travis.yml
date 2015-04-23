@@ -13,7 +13,7 @@ before_script:
   - security import ./Scripts/certs/apple.cer -k ~/Library/Keychains/$KEYCHAIN_NAME.keychain -T /usr/bin/codesign
   
   - mkdir -p "$XC_PROFILE_PATH"
-  - DELIVER_PASSWORD="$APPLE_PASSWORD" sigh -a 'com.example.Travis' -u $USER_ID -t $TEAM_ID --skip_install -n "TRAVIS-$PROFILE_NAME" -o "$XC_PROFILE_PATH" -f $PROFILE_NAME.mobileprovision
+  - DELIVER_PASSWORD="$APPLE_PASSWORD" sigh --skip_install -a 'com.example.Travis' -u $USER_ID -t $TEAM_ID -n "TRAVIS-$PROFILE_NAME" -o "$XC_PROFILE_PATH" -f $PROFILE_NAME.mobileprovision
 
   - PROFILE_UDID=$(./Scripts/profileAnalyzer.rb "$XC_PROFILE_PATH/$PROFILE_NAME.mobileprovision")
   - echo $PROFILE_UDID
@@ -21,7 +21,7 @@ before_script:
 
 script:
  - echo ${PROFILE_UDID}
- - xctool clean build -project TravisExample.xcodeproj -scheme TravisExample -configuration $XC_CONFIGURATION -sdk iphoneos OBJROOT=$PWD/build SYMROOT=$PWD/build PROVISIONING_PROFILE=${PROFILE_UDID} HOCKEY_APP_ID=$HOCKEY_APP_ID 
+ - xctool clean build -project TravisExample.xcodeproj -scheme TravisExample -configuration $XC_CONFIGURATION -sdk iphoneos OBJROOT=$PWD/build SYMROOT=$PWD/build PROVISIONING_PROFILE=${PROFILE_UDID} CODE_SIGN_IDENTITY="$DEVELOPER_NAME" HOCKEY_APP_ID=$HOCKEY_APP_ID 
 
 after_script:
 - ./scripts/remove-key.sh
@@ -30,7 +30,7 @@ after_success:
 env:
   global:
   - APP_NAME="TravisExample"
-  - 'DEVELOPER_NAME="iPhone Distribution: Mattes Groeger"'
+  - DEVELOPER_NAME="iOS Distribution: Couchsport GmbH"
   - PROFILE_NAME="TravisExample"
   - INFO_PLIST="TravisExample/TravisExample-Info.plist"
   - BUNDLE_DISPLAY_NAME="Travis Example CI"
