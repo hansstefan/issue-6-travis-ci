@@ -30,7 +30,7 @@ after_success:
 env:
   global:
   - APP_NAME="TravisExample"
-  - DEVELOPER_NAME="iOS Distribution: Couchsport GmbH"
+  - DEVELOPER_NAME="iPhone Distribution: Couchsport GmbH"
   - PROFILE_NAME="TravisExample"
   - INFO_PLIST="TravisExample/TravisExample-Info.plist"
   - BUNDLE_DISPLAY_NAME="Travis Example CI"
