@@ -40,10 +40,6 @@
 		AD3B30DB181408B500D0AA5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AD3B30DC181408B500D0AA5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AD3B30E4181408B600D0AA5B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		AD3B30EC181408B600D0AA5B /* TravisExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TravisExampleTests-Info.plist"; sourceTree = "<group>"; };
-		AD3B30EE181408B600D0AA5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AD3B30F0181408B600D0AA5B /* TravisExampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TravisExampleTests.h; sourceTree = "<group>"; };
-		AD3B30F1181408B600D0AA5B /* TravisExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravisExampleTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				AD3B30C3181408B500D0AA5B /* TravisExample */,
-				AD3B30EA181408B600D0AA5B /* TravisExampleTests */,
 				AD3B30BC181408B500D0AA5B /* Frameworks */,
 				AD3B30BB181408B500D0AA5B /* Products */,
 			);
@@ -113,25 +108,6 @@
 				AD3B30CF181408B500D0AA5B /* Default.png */,
 				AD3B30D1181408B500D0AA5B /* Default@2x.png */,
 				AD3B30D3181408B500D0AA5B /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AD3B30EA181408B600D0AA5B /* TravisExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				AD3B30F0181408B600D0AA5B /* TravisExampleTests.h */,
-				AD3B30F1181408B600D0AA5B /* TravisExampleTests.m */,
-				AD3B30EB181408B600D0AA5B /* Supporting Files */,
-			);
-			path = TravisExampleTests;
-			sourceTree = "<group>";
-		};
-		AD3B30EB181408B600D0AA5B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AD3B30EC181408B600D0AA5B /* TravisExampleTests-Info.plist */,
-				AD3B30ED181408B600D0AA5B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -236,14 +212,6 @@
 			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		AD3B30ED181408B600D0AA5B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD3B30EE181408B600D0AA5B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -329,9 +297,6 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"RELEASE=1",
-					"COCOAPODS=1",
-					"TESTFLIGHT_APP_TOKEN=$(TESTFLIGHT_APP_TOKEN)",
-					"HOCKEY_APP_ID=$(HOCKEY_APP_ID)",
 				);
 				HOCKEY_APP_ID = "";
 				INFOPLIST_FILE = "TravisExample/TravisExample-Info.plist";
