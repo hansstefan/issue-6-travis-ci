@@ -24,7 +24,7 @@ after_success:
 - ./scripts/sign-and-upload.sh
 env:
   global:
-  - APP_NAME="TravisExample"
+  - APP_NAME="Travis"
   - DEVELOPER_NAME=""
   - PROFILE_NAME="TravisExample"
   - INFO_PLIST="TravisExample/TravisExample-Info.plist"
