@@ -288,7 +288,6 @@
 		AD3B30F7181408B600D0AA5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Couchsport GmbH";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -298,7 +297,7 @@
 				HOCKEY_APP_ID = "";
 				INFOPLIST_FILE = "TravisExample/TravisExample-Info.plist";
 				PRODUCT_NAME = Travis;
-				PROVISIONING_PROFILE = "5bb1060e-c9ad-4998-adc2-a5a4aa47eb1c";
+				PROVISIONING_PROFILE = invalid;
 				TESTFLIGHT_APP_TOKEN = "";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
