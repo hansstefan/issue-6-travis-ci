@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		334EF35233AE4F6CA59178F5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 269B252E822D41C4A19A8A6B /* libPods.a */; };
-		811F5B4547CA4701B486781E /* libPods-TravisExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBEE2933130947E5B87FAC9E /* libPods-TravisExampleTests.a */; };
 		AD3B30BE181408B500D0AA5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3B30BD181408B500D0AA5B /* UIKit.framework */; };
 		AD3B30C0181408B500D0AA5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3B30BF181408B500D0AA5B /* Foundation.framework */; };
 		AD3B30C2181408B500D0AA5B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3B30C1181408B500D0AA5B /* CoreGraphics.framework */; };
@@ -21,27 +19,9 @@
 		AD3B30D7181408B500D0AA5B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3B30D5181408B500D0AA5B /* MainStoryboard_iPhone.storyboard */; };
 		AD3B30DA181408B500D0AA5B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3B30D8181408B500D0AA5B /* MainStoryboard_iPad.storyboard */; };
 		AD3B30DD181408B500D0AA5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3B30DC181408B500D0AA5B /* ViewController.m */; };
-		AD3B30E5181408B600D0AA5B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3B30E4181408B600D0AA5B /* SenTestingKit.framework */; };
-		AD3B30E6181408B600D0AA5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3B30BD181408B500D0AA5B /* UIKit.framework */; };
-		AD3B30E7181408B600D0AA5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD3B30BF181408B500D0AA5B /* Foundation.framework */; };
-		AD3B30EF181408B600D0AA5B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD3B30ED181408B600D0AA5B /* InfoPlist.strings */; };
-		AD3B30F2181408B600D0AA5B /* TravisExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3B30F1181408B600D0AA5B /* TravisExampleTests.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		AD3B30E8181408B600D0AA5B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD3B30B2181408B500D0AA5B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD3B30B9181408B500D0AA5B;
-			remoteInfo = TravisExample;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		269B252E822D41C4A19A8A6B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		463477B794E2437F96D66A6C /* Pods-TravisExampleTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisExampleTests.xcconfig"; path = "Pods/Pods-TravisExampleTests.xcconfig"; sourceTree = "<group>"; };
-		5E909003959A4C8F98628FAB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		AD3B30BA181408B500D0AA5B /* TravisExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3B30BD181408B500D0AA5B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AD3B30BF181408B500D0AA5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,13 +39,11 @@
 		AD3B30D9181408B500D0AA5B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		AD3B30DB181408B500D0AA5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AD3B30DC181408B500D0AA5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AD3B30E3181408B600D0AA5B /* TravisExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3B30E4181408B600D0AA5B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		AD3B30EC181408B600D0AA5B /* TravisExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TravisExampleTests-Info.plist"; sourceTree = "<group>"; };
 		AD3B30EE181408B600D0AA5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AD3B30F0181408B600D0AA5B /* TravisExampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TravisExampleTests.h; sourceTree = "<group>"; };
 		AD3B30F1181408B600D0AA5B /* TravisExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravisExampleTests.m; sourceTree = "<group>"; };
-		DBEE2933130947E5B87FAC9E /* libPods-TravisExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravisExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,18 +54,6 @@
 				AD3B30BE181408B500D0AA5B /* UIKit.framework in Frameworks */,
 				AD3B30C0181408B500D0AA5B /* Foundation.framework in Frameworks */,
 				AD3B30C2181408B500D0AA5B /* CoreGraphics.framework in Frameworks */,
-				334EF35233AE4F6CA59178F5 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD3B30DF181408B600D0AA5B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD3B30E5181408B600D0AA5B /* SenTestingKit.framework in Frameworks */,
-				AD3B30E6181408B600D0AA5B /* UIKit.framework in Frameworks */,
-				AD3B30E7181408B600D0AA5B /* Foundation.framework in Frameworks */,
-				811F5B4547CA4701B486781E /* libPods-TravisExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +67,6 @@
 				AD3B30EA181408B600D0AA5B /* TravisExampleTests */,
 				AD3B30BC181408B500D0AA5B /* Frameworks */,
 				AD3B30BB181408B500D0AA5B /* Products */,
-				463477B794E2437F96D66A6C /* Pods-TravisExampleTests.xcconfig */,
-				5E909003959A4C8F98628FAB /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				AD3B30BA181408B500D0AA5B /* TravisExample.app */,
-				AD3B30E3181408B600D0AA5B /* TravisExampleTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,8 +85,6 @@
 				AD3B30BF181408B500D0AA5B /* Foundation.framework */,
 				AD3B30C1181408B500D0AA5B /* CoreGraphics.framework */,
 				AD3B30E4181408B600D0AA5B /* SenTestingKit.framework */,
-				DBEE2933130947E5B87FAC9E /* libPods-TravisExampleTests.a */,
-				269B252E822D41C4A19A8A6B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -182,11 +143,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD3B30F5181408B600D0AA5B /* Build configuration list for PBXNativeTarget "TravisExample" */;
 			buildPhases = (
-				35D5C1EAB0CF46C5A3A88E06 /* Check Pods Manifest.lock */,
 				AD3B30B6181408B500D0AA5B /* Sources */,
 				AD3B30B7181408B500D0AA5B /* Frameworks */,
 				AD3B30B8181408B500D0AA5B /* Resources */,
-				07B4EF3971BA4A77ADEF3E7B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,27 +155,6 @@
 			productName = TravisExample;
 			productReference = AD3B30BA181408B500D0AA5B /* TravisExample.app */;
 			productType = "com.apple.product-type.application";
-		};
-		AD3B30E2181408B600D0AA5B /* TravisExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD3B30F8181408B600D0AA5B /* Build configuration list for PBXNativeTarget "TravisExampleTests" */;
-			buildPhases = (
-				5D7021A7C00D4A1CACAE6478 /* Check Pods Manifest.lock */,
-				AD3B30DE181408B600D0AA5B /* Sources */,
-				AD3B30DF181408B600D0AA5B /* Frameworks */,
-				AD3B30E0181408B600D0AA5B /* Resources */,
-				AD3B30E1181408B600D0AA5B /* ShellScript */,
-				64FC2603548D4776BC8CEADE /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AD3B30E9181408B600D0AA5B /* PBXTargetDependency */,
-			);
-			name = TravisExampleTests;
-			productName = TravisExampleTests;
-			productReference = AD3B30E3181408B600D0AA5B /* TravisExampleTests.octest */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -240,7 +178,6 @@
 			projectRoot = "";
 			targets = (
 				AD3B30B9181408B500D0AA5B /* TravisExample */,
-				AD3B30E2181408B600D0AA5B /* TravisExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -259,91 +196,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD3B30E0181408B600D0AA5B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD3B30EF181408B600D0AA5B /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		07B4EF3971BA4A77ADEF3E7B /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		35D5C1EAB0CF46C5A3A88E06 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		5D7021A7C00D4A1CACAE6478 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		64FC2603548D4776BC8CEADE /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-TravisExampleTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AD3B30E1181408B600D0AA5B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD3B30B6181408B500D0AA5B /* Sources */ = {
@@ -356,23 +209,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD3B30DE181408B600D0AA5B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD3B30F2181408B600D0AA5B /* TravisExampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AD3B30E9181408B600D0AA5B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AD3B30B9181408B500D0AA5B /* TravisExample */;
-			targetProxy = AD3B30E8181408B600D0AA5B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AD3B30C6181408B500D0AA5B /* InfoPlist.strings */ = {
@@ -470,7 +307,6 @@
 		};
 		AD3B30F6181408B600D0AA5B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E909003959A4C8F98628FAB /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
@@ -485,7 +321,6 @@
 		};
 		AD3B30F7181408B600D0AA5B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E909003959A4C8F98628FAB /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -509,42 +344,6 @@
 			};
 			name = Release;
 		};
-		AD3B30F9181408B600D0AA5B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 463477B794E2437F96D66A6C /* Pods-TravisExampleTests.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TravisExample.app/TravisExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
-				INFOPLIST_FILE = "TravisExampleTests/TravisExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		AD3B30FA181408B600D0AA5B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 463477B794E2437F96D66A6C /* Pods-TravisExampleTests.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TravisExample.app/TravisExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
-				INFOPLIST_FILE = "TravisExampleTests/TravisExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -562,15 +361,6 @@
 			buildConfigurations = (
 				AD3B30F6181408B600D0AA5B /* Debug */,
 				AD3B30F7181408B600D0AA5B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AD3B30F8181408B600D0AA5B /* Build configuration list for PBXNativeTarget "TravisExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD3B30F9181408B600D0AA5B /* Debug */,
-				AD3B30FA181408B600D0AA5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

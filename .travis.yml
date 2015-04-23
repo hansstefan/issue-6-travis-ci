@@ -21,7 +21,7 @@ before_script:
 
 script:
  - echo ${PROFILE_UDID}
- - xctool clean build -workspace Hallelujah.xcworkspace -scheme HallBETA -configuration $XC_CONFIGURATION -sdk iphoneos OBJROOT=$PWD/build SYMROOT=$PWD/build PROVISIONING_PROFILE=${PROFILE_UDID} HOCKEY_APP_ID=$HOCKEY_APP_ID 
+ - xctool clean build -project TravisExample.xcodeproj -scheme HallBETA -configuration $XC_CONFIGURATION -sdk iphoneos OBJROOT=$PWD/build SYMROOT=$PWD/build PROVISIONING_PROFILE=${PROFILE_UDID} HOCKEY_APP_ID=$HOCKEY_APP_ID 
 
 after_script:
 - ./scripts/remove-key.sh
