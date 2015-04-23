@@ -13,7 +13,7 @@ before_script:
   - security import ./Scripts/certs/apple.cer -k ~/Library/Keychains/$KEYCHAIN_NAME.keychain -T /usr/bin/codesign
   
   - mkdir -p "$XC_PROFILE_PATH"
-  - DELIVER_PASSWORD="$APPLE_PASSWORD" sigh -a 'com.couchsport.HallelujahBETA' -u $USER_ID -t $TEAM_ID -n "TRAVIS-$PROFILE_NAME" -o "$XC_PROFILE_PATH" -f $PROFILE_NAME.mobileprovision
+  - DELIVER_PASSWORD="$APPLE_PASSWORD" sigh -a 'com.example.Travis' -u $USER_ID -t $TEAM_ID -n "TRAVIS-$PROFILE_NAME" -o "$XC_PROFILE_PATH" -f $PROFILE_NAME.mobileprovision
 
   - PROFILE_UDID=$(./Scripts/profileAnalyzer.rb "$XC_PROFILE_PATH/$PROFILE_NAME.mobileprovision")
   - echo $PROFILE_UDID
