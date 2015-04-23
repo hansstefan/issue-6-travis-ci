@@ -227,7 +227,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -259,7 +258,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -290,8 +288,7 @@
 		AD3B30F7181408B600D0AA5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Couchsport GmbH";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -301,8 +298,7 @@
 				HOCKEY_APP_ID = "";
 				INFOPLIST_FILE = "TravisExample/TravisExample-Info.plist";
 				PRODUCT_NAME = Travis;
-				PROVISIONING_PROFILE = 123;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = 123;
+				PROVISIONING_PROFILE = "5bb1060e-c9ad-4998-adc2-a5a4aa47eb1c";
 				TESTFLIGHT_APP_TOKEN = "";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
