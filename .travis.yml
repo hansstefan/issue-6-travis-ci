@@ -39,7 +39,7 @@ env:
   - KEYCHAIN_NAME="ios-build"
   - TEAM_ID="4S4VJWAS6R"
   - USER_ID="glogera@gmail.com"
-  - XC_CONFIGURATION="Beta"
+  - XC_CONFIGURATION="Release"
   - XC_SDK="iphoneos"
   - XC_PROFILE_PATH="$HOME/Library/MobileDevice/Provisioning Profiles"
 
