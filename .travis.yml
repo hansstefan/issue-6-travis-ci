@@ -4,6 +4,8 @@ language: objective-c
 cache: bundler
 
 before_install:
+  - echo "git rev-list HEAD --count"
+  - echo "git rev-parse HEAD -count"
   - brew update && brew install phantomjs # sigh dependecy
   - gem install sigh
 
