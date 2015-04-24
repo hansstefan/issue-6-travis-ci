@@ -4,8 +4,14 @@ language: objective-c
 cache: bundler
 
 before_install:
-  - echo "git rev-list HEAD --count"
-  - echo "git rev-parse HEAD -count"
+  - echo "$(git rev-list HEAD --count)"
+  - echo "$(git rev-list --count)"
+  - echo "$(git rev-parse HEAD -count)"
+  
+  - branch=${1:-'master'}
+  - buildNumber=$(expr $(git rev-list $branch --count) - $(git rev-list HEAD..$branch --count))
+  - echo "Updating build number to $buildNumber using branch '$branch'."
+  
   - brew update && brew install phantomjs # sigh dependecy
   - gem install sigh
 
