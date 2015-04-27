@@ -2,6 +2,8 @@
 # EXAMPLE >>>>>>>>>>>>>>>>>>>>>>>>>
 language: objective-c
 cache: bundler
+git:
+  depth: 10000
 
 before_install:
   - echo "$(git rev-list HEAD --count)"
