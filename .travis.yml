@@ -7,10 +7,13 @@ before_install:
   - echo "$(git rev-list HEAD --count)"
   - echo "$(git rev-list --count)"
   - echo "$(git rev-parse HEAD -count)"
+  - git=`sh /etc/profile; which git`
+  - build_num=`"$git" rev-list --all |wc -l` # we count for all branches
+  - echo "$build_num"
+  - git rev-list -all
   
-  - branch=${1:-'master'}
-  - buildNumber=$(expr $(git rev-list $branch --count) - $(git rev-list HEAD..$branch --count))
-  - echo "Updating build number to $buildNumber using branch '$branch'."
+  - buildNumber=$(git rev-list HEAD --count)
+  - echo "Build number= $buildNumber"
   
   - brew update && brew install phantomjs # sigh dependecy
   - gem install sigh
