@@ -10,7 +10,7 @@ before_install:
   - git=`sh /etc/profile; which git`
   - build_num=`"$git" rev-list --all |wc -l` # we count for all branches
   - echo "$build_num"
-  - git rev-list -all
+  - git rev-list --all
   
   - buildNumber=$(git rev-list HEAD --count)
   - echo "Build number= $buildNumber"
