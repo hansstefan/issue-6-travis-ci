@@ -6,6 +6,7 @@ git:
   depth: 10000
 
 before_install:
+  - echo "$SECRET_VAR"
   - echo "$(git rev-list HEAD --count)"
   - echo "$(git rev-list --count)"
   - echo "$(git rev-parse HEAD -count)"
