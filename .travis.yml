@@ -6,6 +6,7 @@ git:
   depth: 10000
 
 before_install:
+  - echo secure: "ElFqRXe1UiAAZkbuanfXU62MFOxDp/9kpJs+LdrRtAY3DsgP1+76jYAtb2vPhxylzHq699P35cJUMQZJvgBHu78f9U1NgKk7OkgXAOcvrkLXYsSYlX/UcE1+HdRv/Rdkba9lTWgduUDlDUhVPof1zWq8BiwBsimbCEb5UjZAFeY="
   - echo "$SECRET_VAR"
   - echo "$(git rev-list HEAD --count)"
   - echo "$(git rev-list --count)"
